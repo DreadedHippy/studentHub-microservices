@@ -4,7 +4,7 @@ dotenv.config()
 
 
 export function sendMail(req, res){
-	console.log(req.body)
+	console.log('Request received')
 	const transporter = nml.createTransport({
 		service: 'gmail',
 		auth: {
